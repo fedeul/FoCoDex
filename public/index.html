@@ -61,62 +61,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 
-  <script>
-    jQuery(function () {
-      // Set Global Chart.js configuration
-      Chart.defaults.global.defaultFontColor = '#718096';
-      Chart.defaults.scale.gridLines.color = 'transparent';
-      Chart.defaults.scale.gridLines.zeroLineColor = 'transparent';
-      Chart.defaults.global.elements.line.borderWidth = 2;
-      Chart.defaults.global.elements.point.radius = 4;
-      Chart.defaults.global.elements.point.hoverRadius = 6;
-      Chart.defaults.global.tooltips.cornerRadius = 4;
-      Chart.defaults.global.legend.display = false;
 
-      // Get Chart Container
-      var chartVisitors = jQuery('.js-chartjs-visitors');
-
-      // Init Chart
-      var chart = new Chart(chartVisitors, {
-        type: 'line',
-        data: {
-          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-          datasets: [
-            {
-              label: 'Visitors',
-              fill: true,
-              backgroundColor: 'rgba(56, 161, 105, .25)',
-              borderColor: 'rgba(56, 161, 105, 1)',
-              pointBackgroundColor: 'rgba(56, 161, 105, 1)',
-              pointBorderColor: '#fff',
-              pointHoverBackgroundColor: '#fff',
-              pointHoverBorderColor: 'rgba(56, 161, 105, 1)',
-              data: [17262, 31552, 14833, 29132, 21432, 23679, 36789]
-            }
-          ]
-        },
-        options: {
-          maintainAspectRatio: false,
-          scales: {
-            yAxes: [{
-              ticks: {
-                suggestedMin: 0,
-                suggestedMax: 40000
-              }
-            }]
-          },
-          tooltips: {
-            intersect: false,
-            callbacks: {
-              label: function (tooltipItems, data) {
-                return ' ' + tooltipItems.yLabel + ' Page views';
-              }
-            }
-          }
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>

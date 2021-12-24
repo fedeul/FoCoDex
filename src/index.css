@@ -93,6 +93,9 @@ hr {
   font-size: 0.875rem;
 }
 
+.font-size-xl {
+  font-size: 1.65rem;
+}
 .avatar {
   display: inline-block;
   width: 48px;
@@ -263,7 +266,7 @@ a.block:active {
   top: 0;
   width: 0.5rem;
   right: 0;
-  background-color: #667eea;
+  background-color: #14ad35;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
@@ -280,43 +283,6 @@ a.block:active {
   opacity: 1;
   -webkit-transform: translateX(0);
   transform: translateX(0);
-}
-
-/* LOADING CIRCLE */
-.loading-wrap {
-  height: 100vh;
-  display: flex;
-  margin: -25px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.loading {
-  height: 180px;
-  width: 180px;
-  background: transparent;
-  border-radius: 50%;
-  margin: auto;
-}
-.loading::after {
-  content: " ";
-  display: block;
-  height: 200px;
-  width: 200px;
-  top: -10px;
-  left: -10px;
-
-  background-image: linear-gradient(to left, #a5ac1b 50%, #fff 0);
-  position: relative;
-  z-index: -1;
-  border-radius: 50%;
-  transform: rotate(0turn);
-  animation: anim 1s infinite ease-in-out;
-}
-@keyframes anim {
-  100% {
-    transform: rotate(1turn);
-  }
 }
 
 .probability {

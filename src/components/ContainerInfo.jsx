@@ -23,7 +23,7 @@ const ContainerInfo = () => {
             setLoading(false);
           })
           .catch((error) => console.log(error));
-      }, 2000);
+      }, 500);
     } else {
       setTimeout(() => {
         getAnimals
