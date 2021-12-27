@@ -63,7 +63,7 @@ const AnimalInfo = (props) => {
       {/* <!-- END Stats --> */}
 
       {/* <!-- Description views --> */}
-      <div className="block">
+      <div id="description" className="block">
         <div className="block-content bg-black-10">
           <h3 className="font-size-sm text-muted font-weight-bold text-uppercase mb-0">
             <i class="las la-comment"></i> DESCRIPTION
