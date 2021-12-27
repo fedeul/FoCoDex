@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+// import { DarkModeToggle } from "react-dark-mode-toggle-2";
+// import { useState } from "react";
 
 const Header = () => {
+  // const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <div className="bg-image">
       <div className="bg-image-overlay pt-5 py-md-5">
@@ -14,9 +17,16 @@ const Header = () => {
               <i className="fa far fa-compass text-light mr-2"></i> FoCoDex
             </Link>
           </div>
-          {/* USER BUTTON */}
-          {/* <div className="text-center text-md-right py-2">
-            <div className="dropdown">
+
+          <div className="text-center text-md-right py-2">
+            {/* <DarkModeToggle
+              className="toggle"
+              onChange={setIsDarkMode}
+              isDarkMode={isDarkMode}
+              size={48}
+            /> */}
+            {/* USER BUTTON */}
+            {/*<div className="dropdown">
               <button
                 className="btn btn-link"
                 type="button"
@@ -53,8 +63,8 @@ const Header = () => {
                   Log Out
                 </a>
               </div>
-            </div>
-          </div> */}
+            </div>*/}
+          </div>
         </header>
       </div>
     </div>

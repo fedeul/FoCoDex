@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <div id="page-container">
         <Header />
-        <div className="container py-4">
+        <div id="top" className="container py-4">
           <div className="row">
             {/* <!-- Menu --> */}
             <AnimalsMenu />

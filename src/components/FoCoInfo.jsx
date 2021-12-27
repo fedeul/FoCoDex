@@ -55,6 +55,13 @@ const ContainerInfo = () => {
         </div>
         <div className="block-content">
           <p>
+            Fort Collins was founded as a military fort in 1864 and referred to
+            as "Camp Collins." The post was given the name in honor of Lt. Col.
+            William 0. Collins, the popular commander of Ohio Cavalry troops
+            whose headquarters were at Fort Laramie. Fort Collins was
+            incorporated as a town in 1873.
+          </p>
+          <p>
             Located in northern Colorado, Fort Collins is home to Colorado State
             University and an outstanding public school system. Nestled at the
             base of the Rocky Mountains, Fort Collins offers exciting
@@ -121,26 +128,33 @@ const ContainerInfo = () => {
           <div className="row text-center">
             <div className="col-sm-4 py-3">
               <div className="text-muted mb-2 text-uppercase font-size-sm font-weight-bold">
-                Page Views
+                Population
               </div>
               <div className="text-black font-size-lg font-weight-bold">
-                15.2m
+                174,871
+                <p className="font-size-sm font-weight-normal">(2020)</p>
               </div>
             </div>
             <div className="col-sm-4 py-3">
               <div className="text-muted mb-2 text-uppercase font-size-sm font-weight-bold">
-                Conversion
+                Altitude
               </div>
               <div className="text-black font-size-lg font-weight-bold">
-                8.3%
+                5,000 ft.
+                <p className="font-size-sm font-weight-normal">
+                  above sea level
+                </p>
               </div>
             </div>
             <div className="col-sm-4 py-3">
               <div className="text-muted mb-2 text-uppercase font-size-sm font-weight-bold">
-                Visitors
+                Weather
               </div>
               <div className="text-black font-size-lg font-weight-bold">
-                7.3m
+                +300
+                <p className="font-size-sm font-weight-normal">
+                  days of sunshine
+                </p>
               </div>
             </div>
           </div>

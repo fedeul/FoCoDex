@@ -3,6 +3,7 @@ import { getAnimals } from "../data/AnimalsDB";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AnimalsList from "./AnimalsList";
+import $ from "jquery";
 
 const AnimalsMenu = () => {
   const [animal, setAnimal] = useState([]);
@@ -31,7 +32,7 @@ const AnimalsMenu = () => {
             setAnimal(respuesta);
           })
           .catch((error) => console.log(error))
-          .finally(() => setLoading(false));
+          .finally(() => setLoading());
       }, 500);
     }
   }, [animalId, animal]);
@@ -43,10 +44,11 @@ const AnimalsMenu = () => {
         <button
           type="button"
           className="btn btn-link btn-block d-lg-none mb-4"
-          onclick="$('#navigation').toggleClassName('d-none');"
+          onClick={() => $("#navigation").toggleClass("d-none")}
         >
-          <i className="fa fa-fw fa-bars mr-1"></i> Animals
+          <i class="las la-paw mr-1"></i> Animals
         </button>
+
         <div id="navigation" className="block d-none d-lg-block mr-lg-4">
           <div className="block-content">
             <div className="font-size-sm text-uppercase text-light font-weight-bold mb-3">

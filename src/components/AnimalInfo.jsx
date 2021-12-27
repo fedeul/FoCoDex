@@ -4,14 +4,14 @@ const AnimalInfo = (props) => {
     <>
       <div key={animal.id} className="row">
         <div className="col-sm-6 col-lg-4">
-          <div className="block" href="#1">
-            <div className="block-content block-content-full d-flex justify-content-between align-items-center">
+          <div className="block d-flex align-items-center" href="#1">
+            <div className="block-content w-100 block-content-full d-flex justify-content-between align-items-center">
               <div className="py-2">
                 <div className="text-white font-size-lg font-weight-bold text-capitalize">
                   <h4>{animal.name}</h4>
                 </div>
-                <div className="text-muted text-uppercase font-size-sm font-weight-bold">
-                  {animal.category}
+                <div className="text-muted text-capitalize font-size-sm">
+                  <em>{animal.category}</em>
                 </div>
               </div>
               <div className="font-weight-bold text-success font-size-sm py-2">
@@ -26,7 +26,10 @@ const AnimalInfo = (props) => {
           </div>
         </div>
         <div className="col-sm-6 col-lg-4">
-          <div className="block" href="#1">
+          <div
+            className="block d-flex justify-content-center align-items-center"
+            href="#1"
+          >
             <div className="block-content text-center block-content-full d-flex justify-content-center align-items-center">
               <div className="py-2">
                 <div className="text-white font-size-sm font-weight-bold">
@@ -40,7 +43,10 @@ const AnimalInfo = (props) => {
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="block" href="#1">
+          <div
+            className="block d-flex justify-content-center align-items-center"
+            href="#1"
+          >
             <div className="block-content text-center block-content-full d-flex justify-content-center align-items-center">
               <div className="py-2">
                 <div className="text-white font-size-sm font-weight-bold">
@@ -111,7 +117,7 @@ const AnimalInfo = (props) => {
             loading="lazy"
           ></iframe>
         </div>
-        <div className="block-content bg-black-10">
+        {/* <div className="block-content bg-black-10">
           <div className="row text-center">
             <div className="col-sm-4 py-3">
               <div className="text-muted mb-2 text-uppercase font-size-sm font-weight-bold">
@@ -138,7 +144,7 @@ const AnimalInfo = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
