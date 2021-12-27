@@ -2,7 +2,7 @@ const AnimalInfo = (props) => {
   const { animal } = props;
   return (
     <>
-      <div key={animal.id} className="row">
+      <div id="animal" key={animal.id} className="row">
         <div className="col-sm-6 col-lg-4">
           <div className="block d-flex align-items-center" href="#1">
             <div className="block-content w-100 block-content-full d-flex justify-content-between align-items-center">
@@ -63,7 +63,7 @@ const AnimalInfo = (props) => {
       {/* <!-- END Stats --> */}
 
       {/* <!-- Description views --> */}
-      <div id="description" className="block">
+      <div className="block">
         <div className="block-content bg-black-10">
           <h3 className="font-size-sm text-muted font-weight-bold text-uppercase mb-0">
             <i class="las la-comment"></i> DESCRIPTION
