@@ -8,7 +8,7 @@ const Animal = (props) => {
     $("li>a").removeClass("active");
     $(active).addClass("active");
     $("li>a").click(function () {
-      window.location = "#";
+      window.location = "#description";
     });
   };
   return (
