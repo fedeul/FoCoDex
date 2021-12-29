@@ -3,7 +3,7 @@ const ContainerInfo = () => {
     <div className="col-lg-8 col-xl-9">
       <div className="row">
         <div className="col-sm-6 col-lg-4">
-          <div className="block" href="#1">
+          <div className="block d-flex justify-content-center align-items-center">
             <div className="block-content block-content-full d-flex justify-content-between align-items-center">
               <div className="py-2 mx-auto text-center">
                 <img
@@ -20,24 +20,24 @@ const ContainerInfo = () => {
           </div>
         </div>
         <div className="col-sm-6 col-lg-4">
-          <div className="block" href="#1">
+          <div className="block d-flex justify-content-center align-items-center">
             <div className="block-content text-center block-content-full d-flex justify-content-center align-items-center">
               <div className="py-2">
                 <div className="text-white font-size-sm font-weight-bold">
                   <h5>Best City for Cycling</h5>
-                  <i class="las la-biking text-warning font-size-xl"></i>
+                  <i className="las la-biking text-warning font-size-xl"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-4">
-          <div className="block" href="#1">
+          <div className="block d-flex justify-content-center align-items-center">
             <div className="block-content text-center block-content-full d-flex justify-content-center align-items-center">
               <div className="py-2">
                 <div className="text-white font-size-sm font-weight-bold">
                   <h5>State Craft Beer Capital</h5>
-                  <i class="las la-beer text-warning font-size-xl"></i>
+                  <i className="las la-beer text-warning font-size-xl"></i>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ const ContainerInfo = () => {
       <div className="block">
         <div className="block-content bg-black-10">
           <h3 className="font-size-sm text-muted font-weight-bold text-uppercase mb-0">
-            <i class="las la-comment"></i> DESCRIPTION
+            <i className="las la-comment"></i> DESCRIPTION
           </h3>
         </div>
         <div className="block-content">
@@ -97,7 +97,7 @@ const ContainerInfo = () => {
             </div>
             <div className="col-sm-4 py-3 m-auto">
               <img
-                class="img-fluid img-animal "
+                className="img-fluid img-animal "
                 src="https://cdn2.hubspot.net/hubfs/2172371/Assets%20-%20post%202020/04-Stock-Images/04a-Stock-Photos/f-Mountains-Estes-Park.jpg"
                 alt="Reservoir"
               />
@@ -111,7 +111,7 @@ const ContainerInfo = () => {
       <div className="block">
         <div className="block-content bg-black-10">
           <h3 className="font-size-sm text-muted font-weight-bold text-uppercase mb-0">
-            <i class="las la-crosshairs"></i> WHERE CAN FOUND THEM
+            <i className="las la-crosshairs"></i> WHERE CAN FOUND THEM
           </h3>
         </div>
         <div>
@@ -120,7 +120,7 @@ const ContainerInfo = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97002.2006481008!2d-105.13769193008442!3d40.55663730225991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a4590f030ad%3A0xa9b14228b4ab4082!2sFort%20Collins%2C%20CO!5e0!3m2!1sen!2sus!4v1640371639043!5m2!1sen!2sus"
             width="100%"
             height="450"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </div>

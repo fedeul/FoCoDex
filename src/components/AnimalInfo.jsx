@@ -1,13 +1,14 @@
 const AnimalInfo = (props) => {
   const { animal } = props;
+
   return (
     <>
       <div id="animal" key={animal.id} className="row">
         <div className="col-sm-6 col-lg-4">
-          <div className="block d-flex align-items-center" href="#1">
+          <div className="block d-flex align-items-center">
             <div className="block-content w-100 block-content-full d-flex justify-content-between align-items-center">
               <div className="py-2">
-                <div className="text-white font-size-lg font-weight-bold text-capitalize">
+                <div className="text-primary font-size-lg font-weight-bold text-capitalize">
                   <h4>{animal.name}</h4>
                 </div>
                 <div className="text-muted text-capitalize font-size-sm">
@@ -26,15 +27,12 @@ const AnimalInfo = (props) => {
           </div>
         </div>
         <div className="col-sm-6 col-lg-4">
-          <div
-            className="block d-flex justify-content-center align-items-center"
-            href="#1"
-          >
+          <div className="block d-flex justify-content-center align-items-center">
             <div className="block-content text-center block-content-full d-flex justify-content-center align-items-center">
               <div className="py-2">
-                <div className="text-white font-size-sm font-weight-bold">
+                <div className="text-primary font-size-sm font-weight-bold">
                   <h5>
-                    <i class="las la-binoculars"></i> Sighting probability
+                    <i className="las la-binoculars"></i> Sighting probability
                   </h5>
                   <p className={animal.text}>{animal.probability}</p>
                 </div>
@@ -43,15 +41,12 @@ const AnimalInfo = (props) => {
           </div>
         </div>
         <div className="col-lg-4">
-          <div
-            className="block d-flex justify-content-center align-items-center"
-            href="#1"
-          >
+          <div className="block d-flex justify-content-center align-items-center">
             <div className="block-content text-center block-content-full d-flex justify-content-center align-items-center">
               <div className="py-2">
-                <div className="text-white font-size-sm font-weight-bold">
+                <div className="text-primary font-size-sm font-weight-bold">
                   <h5>
-                    <i class="las la-calendar"></i> Seasons
+                    <i className="las la-calendar"></i> Seasons
                   </h5>
                   {animal.season}
                 </div>
@@ -66,7 +61,7 @@ const AnimalInfo = (props) => {
       <div className="block">
         <div className="block-content bg-black-10">
           <h3 className="font-size-sm text-muted font-weight-bold text-uppercase mb-0">
-            <i class="las la-comment"></i> DESCRIPTION
+            <i className="las la-comment"></i> DESCRIPTION
           </h3>
         </div>
         <div className="block-content">
@@ -76,21 +71,21 @@ const AnimalInfo = (props) => {
           <div className="row text-center">
             <div className="col-sm-4 py-3 m-auto">
               <img
-                class="img-fluid img-animal"
+                className="img-fluid img-animal"
                 src={animal.img}
                 alt={animal.name}
               />
             </div>
             <div className="col-sm-4 py-3 m-auto">
               <img
-                class="img-fluid img-animal "
+                className="img-fluid img-animal "
                 src={animal.img2}
                 alt={animal.name}
               />
             </div>
             <div className="col-sm-4 py-3 m-auto">
               <img
-                class="img-fluid img-animal "
+                className="img-fluid img-animal "
                 src={animal.img3}
                 alt={animal.name}
               />
@@ -104,16 +99,15 @@ const AnimalInfo = (props) => {
       <div className="block">
         <div className="block-content bg-black-10">
           <h3 className="font-size-sm text-muted font-weight-bold text-uppercase mb-0">
-            <i class="las la-crosshairs"></i> WHERE CAN FOUND THEM
+            <i className="las la-crosshairs"></i> WHERE CAN FOUND THEM
           </h3>
         </div>
-        <div>
+        <div className="bg-black-10">
           <iframe
             title={animal.name}
             src={animal.map}
             width="100%"
             height="450"
-            allowfullscreen=""
             loading="lazy"
           ></iframe>
         </div>

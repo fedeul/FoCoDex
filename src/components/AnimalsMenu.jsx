@@ -43,15 +43,15 @@ const AnimalsMenu = () => {
         {/* <!-- Toggle Navigation Button --> */}
         <button
           type="button"
-          className="btn btn-link btn-block d-lg-none mb-4"
+          className="btn-nav btn text-primary font-size-lg btn-block d-lg-none mb-4"
           onClick={() => $("#navigation").toggleClass("d-none")}
         >
-          <i class="las la-paw mr-1"></i> Animals
+          <i className="las la-paw mr-1"></i> Animals
         </button>
 
         <div id="navigation" className="block d-none d-lg-block mr-lg-4">
           <div className="block-content">
-            <div className="font-size-sm text-uppercase text-light font-weight-bold mb-3">
+            <div className="font-size-sm text-uppercase text-primary font-weight-bold mb-3">
               Animals
             </div>
             <ul className="nav-main mb-4">

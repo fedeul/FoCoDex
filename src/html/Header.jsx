@@ -1,9 +1,33 @@
 import { Link } from "react-router-dom";
-// import { DarkModeToggle } from "react-dark-mode-toggle-2";
-// import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
+  const [lightTheme, setLightTheme] = useState(
+    localStorage.getItem("theme") === "dark"
+      ? "fa far fa-compass text-warning mr-2"
+      : "fa far fa-compass text-black mr-2"
+  );
+  // ===Switch Theme===
+  const [checked, setChecked] = useState(
+    localStorage.getItem("theme") === "dark" ? true : false
+  );
+
+  useEffect(() => {
+    document
+      .getElementsByTagName("HTML")[0]
+      .setAttribute("data-theme", localStorage.getItem("theme"));
+  }, [checked]);
+
+  const toggleThemeChange = () => {
+    if (checked === false) {
+      localStorage.setItem("theme", "dark");
+      setChecked(true);
+    } else {
+      localStorage.setItem("theme", "light");
+      setChecked(false);
+    }
+  };
+
   return (
     <div className="bg-image">
       <div className="bg-image-overlay pt-5 py-md-5">
@@ -11,20 +35,39 @@ const Header = () => {
           <div className="text-center text-md-left py-2">
             <Link
               to="/"
-              className="h5 text-white font-weight-bold d-flex align-items-center justify-content-center mb-0"
+              className="h5 text-primary font-weight-bold d-flex align-items-center justify-content-center mb-0"
               href="#1"
             >
-              <i className="fa far fa-compass text-light mr-2"></i> FoCoDex
+              <i className={lightTheme}></i> FoCoDex
             </Link>
           </div>
 
           <div className="text-center text-md-right py-2">
-            {/* <DarkModeToggle
-              className="toggle"
-              onChange={setIsDarkMode}
-              isDarkMode={isDarkMode}
-              size={48}
-            /> */}
+            <input
+              type="checkbox"
+              id="demo1"
+              className="togglebtn"
+              autoComplete="off"
+              defaultChecked={checked}
+              onClick={() => toggleThemeChange()}
+              onChange={() =>
+                setLightTheme(
+                  localStorage.getItem("theme") === "dark"
+                    ? "fa far fa-compass text-warning mr-2"
+                    : "fa far fa-compass text-black mr-2"
+                )
+              }
+            />
+            <label htmlFor="demo1" className="togglebtn">
+              <span className="indicator text-primary">
+                {localStorage.getItem("theme") === "dark" ? (
+                  <i className="las la-power-off text-black"></i>
+                ) : (
+                  <i className="las la-plug text-white"></i>
+                )}
+              </span>
+            </label>
+
             {/* USER BUTTON */}
             {/*<div className="dropdown">
               <button

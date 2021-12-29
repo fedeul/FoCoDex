@@ -2,7 +2,7 @@ const AnimalsCatalog = [
   {
     id: 1,
     name: "black bear",
-    category: "Ursidae",
+    category: "Ursus americanus",
     icon: "../assets/img/animals/bear.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/To_replace_picture_in_%27Ursid_hybrid%27.jpg/1280px-To_replace_picture_in_%27Ursid_hybrid%27.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/0/08/01_Schwarzb%C3%A4r.jpg",
@@ -18,7 +18,7 @@ const AnimalsCatalog = [
   {
     id: 2,
     name: "Bighorn sheep",
-    category: "Onive",
+    category: "Ovis canadensis",
     icon: "../assets/img/animals/big-horn.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/New_Mexico_Bighorn_Sheep.JPG/330px-New_Mexico_Bighorn_Sheep.JPG",
     img2: "https://upload.wikimedia.org/wikipedia/commons/0/09/USGS_ovis_canadensis_GNP_bighorn_rams_0.jpg",
@@ -34,7 +34,7 @@ const AnimalsCatalog = [
   {
     id: 3,
     name: "american bison",
-    category: "Bonive",
+    category: "Bison bison",
     icon: "../assets/img/animals/buffalo.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/330px-American_bison_k5680-1.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Waldbison_Bison_bison_athabascae_Tierpark_Hellabrunn-13.jpg/1200px-Waldbison_Bison_bison_athabascae_Tierpark_Hellabrunn-13.jpg",
@@ -50,7 +50,7 @@ const AnimalsCatalog = [
   {
     id: 4,
     name: "chicken",
-    category: "Bird",
+    category: "Gallus gallus domesticus",
     icon: "../assets/img/animals/chicken.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Male_and_female_chicken_sitting_together.jpg/330px-Male_and_female_chicken_sitting_together.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rooster_portrait2.jpg/800px-Rooster_portrait2.jpg",
@@ -66,7 +66,7 @@ const AnimalsCatalog = [
   {
     id: 5,
     name: "cow",
-    category: "Bovine",
+    category: "Bos primigenius taurus",
     icon: "../assets/img/animals/cow.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/S%C3%A4rk%C3%A4nniemi_-_cow.jpg/1200px-S%C3%A4rk%C3%A4nniemi_-_cow.jpg",
@@ -98,7 +98,7 @@ const AnimalsCatalog = [
   {
     id: 7,
     name: "donkey",
-    category: "tools",
+    category: "Equus africanus asinus",
     icon: "../assets/img/animals/donkey.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Equus_asinus_Kadzid%C5%82owo_001.jpg/1200px-Equus_asinus_Kadzid%C5%82owo_001.jpg",
@@ -129,7 +129,7 @@ const AnimalsCatalog = [
   {
     id: 9,
     name: "goat",
-    category: "Ovine",
+    category: "Capra hircus",
     icon: "../assets/img/animals/goat.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/800px-Hausziege_04.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Goat_kid_in_char_of_Sirajganj%2C_Bangladesh_05.jpg/1200px-Goat_kid_in_char_of_Sirajganj%2C_Bangladesh_05.jpg",
@@ -149,7 +149,7 @@ const AnimalsCatalog = [
   {
     id: 10,
     name: "goose",
-    category: "equipment",
+    category: "Anatidae",
     icon: "../assets/img/animals/goose.png",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Branta_canadensis_in_flight%2C_Great_Meadows_National_Wildlife_Refuge.jpg/1280px-Branta_canadensis_in_flight%2C_Great_Meadows_National_Wildlife_Refuge.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Anser_caerulescens_CT8.jpg/1200px-Anser_caerulescens_CT8.jpg",
@@ -166,7 +166,7 @@ const AnimalsCatalog = [
   {
     id: 11,
     name: "hawk",
-    category: "Bird",
+    category: "Accipitridae",
     icon: "../assets/img/animals/hawk.png",
     img: "https://i.pinimg.com/originals/77/93/ea/7793eaa77d74b457388a89737f3570d1.jpg",
     img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Red-tailed_hawk%2C_Fort_Collins%2C_Colorado_%283980418838%29.jpg/609px-Red-tailed_hawk%2C_Fort_Collins%2C_Colorado_%283980418838%29.jpg",
@@ -230,7 +230,7 @@ const AnimalsCatalog = [
   {
     id: 15,
     name: "mountain lion",
-    category: "Feline",
+    category: "Puma concolor",
     icon: "../assets/img/animals/mountain-lion.png",
     img: "https://media.9news.com/assets/KUSA/images/f7d10799-1af0-4bb0-a840-79893e3e4d08/f7d10799-1af0-4bb0-a840-79893e3e4d08_1920x1080.jpg",
     img2: "https://ktla.com/wp-content/uploads/sites/4/2016/06/mountain-lion-filephoto.jpg",
@@ -246,7 +246,7 @@ const AnimalsCatalog = [
   {
     id: 16,
     name: "prarie dog",
-    category: "Rodant",
+    category: "Cynomys",
     icon: "../assets/img/animals/prarie-dog.png",
     img: "https://i.natgeofe.com/k/37ede7f2-37b5-470c-adad-1abb689b5166/prairie-dog-greeting_square.jpg",
     img2: "https://nationalzoo.si.edu/sites/default/files/newsroom/black-tailed-prairie-dog-1400x700.jpg",
