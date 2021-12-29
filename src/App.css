@@ -1,8 +1,16 @@
 :root {
   --background: #eff1f4;
-  --text-primary: black;
-  --text-secondary: royalblue;
-  --accent: purple;
+  --block-bg: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: rgb(17, 16, 16);
+  --header-bg: url(assets/img/bg_header-light.jpg);
+  --image-overlay: linear-gradient(
+    0deg,
+    #eff1f4 0,
+    rgba(239, 241, 244, 0.75) 100%
+  );
+  --nav-link-hover: rgba(37, 207, 88, 0.116);
+  --animal-icon: invert(0);
 }
 [data-theme="dark"] {
   --background: #2d3748;

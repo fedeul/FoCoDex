@@ -18,9 +18,9 @@ function App() {
 
             {/* <!-- Animal info --> */}
             <Switch>
-              {/* <FoCoInfo /> */}
               <Route path="/animal/:animalId" component={ContainerInfo} />
               <Route path="/" component={FoCoInfo} />
+              <Route path="*" component={FoCoInfo} />
               <Route exact path="/" />
             </Switch>
           </div>
