@@ -20,7 +20,9 @@ function App() {
             <Switch>
               <Route path="/animal/:animalId" component={ContainerInfo} />
               <Route path="/" component={FoCoInfo} />
+              <Route path="" component={FoCoInfo} />
               <Route path="*" component={FoCoInfo} />
+              <Route component={FoCoInfo} />
               <Route exact path="/" />
             </Switch>
           </div>
